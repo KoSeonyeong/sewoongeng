@@ -78,3 +78,11 @@ background-size:170px 150px,210px 190px,250px 220px;opacity:.9}
 .location-guide span{color:#0b3b88;font-weight:800;white-space:nowrap}.location-guide p{margin:0;color:#697386;line-height:1.7}
 footer a{color:inherit;text-decoration:none}
 @media(max-width:800px){.location-layout{grid-template-columns:1fr;gap:28px}.map-visual{height:330px}.map-copy{left:18px;bottom:18px;right:18px;min-width:0}.location-guide{display:block}.location-guide span{display:block;margin-bottom:8px}}
+
+/* v5.1 actual Naver map screenshot */
+.map-visual.actual-map{height:auto;background:#fff;line-height:0}
+.map-visual.actual-map img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:800px){
+  .map-visual.actual-map{height:auto}
+  .map-visual.actual-map img{width:100%;height:auto}
+}
