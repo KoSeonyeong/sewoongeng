@@ -50,3 +50,31 @@
   .project-table td:nth-child(4):before{content:"금액  ";color:#9ca3af}
   .project-table td:nth-child(5):before{content:"발주처  ";color:#9ca3af}
 }
+
+
+/* v5 location */
+.location-page .detail-title p{color:#6b7280;line-height:1.8;margin-top:14px}
+.location-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:stretch}
+.location-map-card{border:1px solid #e1e6ed;background:#fff}
+.map-visual{height:440px;position:relative;overflow:hidden;background:#eef2f6}
+.map-grid{position:absolute;inset:-40px;background:
+linear-gradient(28deg,transparent 46%,#fff 47%,#fff 49%,transparent 50%),
+linear-gradient(112deg,transparent 47%,#d7dee7 48%,#d7dee7 49%,transparent 50%),
+linear-gradient(5deg,transparent 46%,#fff 47%,#fff 49%,transparent 50%);
+background-size:170px 150px,210px 190px,250px 220px;opacity:.9}
+.map-pin{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50% 50% 50% 0;background:#0b3b88;transform-origin:center;rotate:-45deg;box-shadow:0 12px 30px rgba(11,59,136,.25);display:flex;align-items:center;justify-content:center}
+.map-pin span{rotate:45deg;color:#fff;font-size:10px;font-weight:800;letter-spacing:.05em}
+.map-copy{position:absolute;left:30px;bottom:28px;background:rgba(255,255,255,.94);padding:20px 24px;min-width:230px;box-shadow:0 10px 28px rgba(16,24,40,.08)}
+.map-copy small{display:block;color:#0b3b88;font-weight:800;letter-spacing:.12em;margin-bottom:6px}
+.map-copy strong{display:block;color:#172033;font-size:18px}.map-copy p{margin:5px 0 0;color:#7b8492;font-size:13px}
+.naver-map-btn{display:flex;justify-content:space-between;align-items:center;background:#03c75a;color:#fff!important;padding:18px 22px;font-weight:800;text-decoration:none}
+.naver-map-btn:hover{filter:brightness(.96)}
+.location-info{border-top:2px solid #0b3b88}
+.location-item{padding:26px 6px;border-bottom:1px solid #e2e7ed}
+.location-item>span{display:block;font-size:11px;letter-spacing:.14em;color:#0b3b88;font-weight:800;margin-bottom:8px}
+.location-item strong{font-size:17px;color:#172033;line-height:1.65}.location-item a{color:inherit;text-decoration:none}
+.location-item small{display:block;color:#9ca3af;margin-top:5px}
+.location-guide{display:flex;gap:35px;margin-top:36px;padding:22px 26px;background:#f6f8fb}
+.location-guide span{color:#0b3b88;font-weight:800;white-space:nowrap}.location-guide p{margin:0;color:#697386;line-height:1.7}
+footer a{color:inherit;text-decoration:none}
+@media(max-width:800px){.location-layout{grid-template-columns:1fr;gap:28px}.map-visual{height:330px}.map-copy{left:18px;bottom:18px;right:18px;min-width:0}.location-guide{display:block}.location-guide span{display:block;margin-bottom:8px}}
