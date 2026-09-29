@@ -86,3 +86,30 @@ footer a{color:inherit;text-decoration:none}
   .map-visual.actual-map{height:auto}
   .map-visual.actual-map img{width:100%;height:auto}
 }
+
+/* v5.2 tighter map capture - desktop & mobile */
+.map-visual.actual-map{
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  background:#fff;
+}
+.map-visual.actual-map img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center center;
+}
+@media(max-width:800px){
+  .map-visual.actual-map{
+    width:100%;
+    height:auto;
+  }
+  .map-visual.actual-map img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    object-position:center center;
+  }
+}
