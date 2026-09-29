@@ -113,3 +113,25 @@ footer a{color:inherit;text-decoration:none}
     object-position:center center;
   }
 }
+
+/* v6 official company logo */
+.header .company-logo{
+  display:flex;
+  align-items:center;
+  width:auto;
+  height:auto;
+  text-decoration:none;
+}
+.header .company-logo img{
+  display:block;
+  width:auto;
+  height:42px;
+  max-width:330px;
+  object-fit:contain;
+}
+@media(max-width:800px){
+  .header .company-logo img{
+    height:34px;
+    max-width:230px;
+  }
+}
