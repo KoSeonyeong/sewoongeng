@@ -88,6 +88,46 @@
 }
 </style>
 
+
+<style>
+/* v12.2 HOME lower-section breathing room only */
+.profile-cta .inner,
+.contact-cta .inner{
+  width:min(1660px,88%);
+  max-width:none;
+  margin-left:auto;
+  margin-right:auto;
+}
+.profile-cta{
+  padding-top:112px;
+  padding-bottom:112px;
+}
+.contact-cta{
+  padding-top:118px;
+  padding-bottom:118px;
+}
+.profile-cta .inner,
+.contact-cta .inner{
+  column-gap:clamp(70px,10vw,190px);
+}
+@media(max-width:900px){
+  .profile-cta .inner,
+  .contact-cta .inner{
+    width:calc(100% - 48px);
+  }
+  .profile-cta{padding-top:82px;padding-bottom:82px}
+  .contact-cta{padding-top:88px;padding-bottom:88px}
+}
+@media(max-width:600px){
+  .profile-cta .inner,
+  .contact-cta .inner{
+    width:calc(100% - 40px);
+  }
+  .profile-cta{padding-top:68px;padding-bottom:68px}
+  .contact-cta{padding-top:72px;padding-bottom:72px}
+}
+</style>
+
 </head><body>
 <header class="header">
   <a class="logo company-logo" href="index.html" aria-label="세웅이앤지 홈"><img src="sewoong-logo.png" alt="(주)세웅이앤지 로고"></a>
