@@ -1,4 +1,94 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="(주)세웅이앤지 공식 홈페이지"><title>HOME | (주)세웅이앤지</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="(주)세웅이앤지 공식 홈페이지"><title>HOME | (주)세웅이앤지</title><link rel="stylesheet" href="style.css">
+<style>
+/* v12 HOME HERO ONLY — other pages are untouched */
+.hero{
+  position:relative;
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(4,21,43,.25) 0%,rgba(4,21,43,.08) 43%,rgba(4,21,43,0) 67%),
+    url('sewoong-main-hero.png') center center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;
+  z-index:2;
+  width:min(1180px,88%);
+  margin:auto;
+}
+.hero .eyebrow.light{
+  color:#f5a34f;
+}
+.hero h1{
+  max-width:760px;
+  font-size:clamp(46px,5.6vw,74px);
+  line-height:1.12;
+  letter-spacing:-.045em;
+  margin:22px 0;
+  text-shadow:0 3px 24px rgba(0,0,0,.16);
+}
+.hero h1 em{
+  font-style:normal;
+  color:#ff8a26;
+}
+.hero p{
+  max-width:590px;
+  font-size:17px;
+  line-height:1.8;
+  color:#e8eef5;
+  margin:0 0 34px;
+}
+.hero .btn.white{
+  background:#fff;
+  color:#0b1d3a;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.hero .btn.white:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(0,0,0,.16);
+}
+@media(max-width:800px){
+  .hero{
+    min-height:610px;
+    align-items:flex-end;
+    background-position:62% center;
+  }
+  .hero:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,rgba(4,20,41,.12) 0%,rgba(4,20,41,.30) 38%,rgba(4,20,41,.90) 100%);
+  }
+  .hero-inner{
+    padding-bottom:70px;
+  }
+  .hero h1{
+    font-size:clamp(39px,11vw,54px);
+    max-width:520px;
+  }
+  .hero p{
+    max-width:470px;
+    font-size:15px;
+  }
+}
+@media(max-width:480px){
+  .hero{
+    min-height:570px;
+    background-position:66% center;
+  }
+  .hero-inner{
+    width:calc(100% - 40px);
+    padding-bottom:54px;
+  }
+  .hero h1{
+    font-size:38px;
+  }
+}
+</style>
+
+</head><body>
 <header class="header">
   <a class="logo company-logo" href="index.html" aria-label="세웅이앤지 홈"><img src="sewoong-logo.png" alt="(주)세웅이앤지 로고"></a>
   <button class="menu-btn" aria-label="메뉴">☰</button>
