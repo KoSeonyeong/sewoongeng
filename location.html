@@ -1,7 +1,20 @@
 <!doctype html><html lang="ko"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="(주)세웅이앤지 오시는 길">
-<title>오시는 길 | (주)세웅이앤지</title><link rel="stylesheet" href="style.css"></head><body>
+<title>오시는 길 | (주)세웅이앤지</title><link rel="stylesheet" href="style.css"><style>
+/* LOCATION actual Naver map restore */
+.location-page .map-visual.actual-map{
+  width:100%;height:auto;overflow:hidden;background:#fff;line-height:0;
+}
+.location-page .map-visual.actual-map img{
+  display:block;width:100%;height:auto;object-fit:contain;object-position:center;
+}
+@media(max-width:800px){
+  .location-page .map-visual.actual-map,
+  .location-page .map-visual.actual-map img{width:100%;height:auto}
+}
+</style>
+</head><body>
 <header class="header">
 <a class="logo company-logo" href="index.html" aria-label="세웅이앤지 홈"><img src="sewoong-logo.png" alt="(주)세웅이앤지 로고"></a>
 <button class="menu-btn" aria-label="메뉴">☰</button>
@@ -19,8 +32,7 @@
 <div class="detail-title"><span class="eyebrow">LOCATION</span><h2>찾아오시는 길</h2><p>방문 전 위치와 연락처를 확인해 주세요.</p></div>
 <div class="location-layout">
 <div class="location-map-card">
-<div class="map-visual"><div class="map-grid"></div><div class="map-pin"><span>SEWOONG</span></div>
-<div class="map-copy"><small>NAVER MAP</small><strong>세웅이앤지 본사</strong><p>약대동 47-16 · 2층</p></div></div>
+<div class="map-visual actual-map"><img src="sewoong-naver-map.png" alt="세웅이앤지 본사 위치 네이버 지도"></div>
 <a class="naver-map-btn" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EB%B6%80%EC%B2%9C%EC%8B%9C%20%EC%9B%90%EB%AF%B8%EA%B5%AC%20%ED%8F%89%EC%B2%9C%EB%A1%9C696%EB%B2%88%EA%B8%B8%2021-2" target="_blank" rel="noopener">네이버 지도에서 위치 보기 <span>↗</span></a>
 </div>
 <div class="location-info">
