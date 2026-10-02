@@ -10,13 +10,104 @@
     <div class="nav-item"><button>공지사항</button><div class="dropdown"><a href="notice.html">공지사항</a><a href="contact.html">문의하기</a></div></div>
   </nav>
 </header>
-<main><section class="subhero"><div><span>회사소개</span><h1>회사구조</h1><p>전문성과 책임을 갖춘 조직</p></div></section><div class="breadcrumb"><a href="index.html">HOME</a><span>›</span><span>회사소개</span><span>›</span><strong>회사구조</strong></div><section class="detail-section"><div class="detail-title"><span class="eyebrow">ORGANIZATION</span><h2>전문성과 책임을 바탕으로<br>유기적으로 협력합니다.</h2></div>
-<div class="org-chart"><div class="org-top"><div class="org-ceo-new">대표<br>이사</div><div class="org-audit">감사<small>품질 · 안전</small></div></div><div class="org-trunk"></div>
-<div class="org-depts">
-<div class="org-col"><h3>관리부</h3><div class="org-team">재경팀</div><div class="org-team">업무팀</div><div class="org-team">경영지원팀</div></div>
-<div class="org-col"><h3>공무 · 공사지원부</h3><div class="org-team">예산견적팀</div><div class="org-team">구매팀</div></div>
-<div class="org-col"><h3>공사관리부</h3><div class="org-team">공사1팀</div><div class="org-team">공사2팀</div></div>
-</div></div></section></main>
+<main class="org-page">
+<section class="org-hero"><div class="org-hero-inner">
+<p class="org-kicker">ORGANIZATION</p><h1>회사구조</h1>
+<p>전문성과 책임을 바탕으로 효율적인 조직 체계를 구축하고 있습니다.</p>
+</div></section>
+
+<div class="org-breadcrumb"><a href="index.html">HOME</a><span>›</span><span>회사소개</span><span>›</span><strong>회사구조</strong></div>
+
+<section class="org-intro">
+<div><p class="eyebrow">OUR ORGANIZATION</p><h2>전문성을 연결하고,<br>책임으로 완성합니다.</h2></div>
+<p class="intro-copy">각 부문의 전문성을 바탕으로 유기적인 협업 체계를 구축하여 안정적인 현장 운영과 체계적인 업무 수행을 이어갑니다.</p>
+</section>
+
+<section class="org-chart">
+<div class="leadership">
+<div class="ceo">
+<span class="role-en">CEO</span><strong>대표이사</strong>
+<span class="ceo-line"></span>
+</div>
+<div class="audit"><span>AUDIT</span><strong>감사</strong><p>품질 · 안전</p></div>
+</div>
+
+<div class="departments">
+<article class="dept">
+<div class="dept-no">01</div>
+<div class="dept-title"><span>MANAGEMENT</span><h3>관리부</h3></div>
+<div class="teams"><span>재경팀</span><span>업무팀</span><span>경영지원팀</span></div>
+</article>
+<article class="dept">
+<div class="dept-no">02</div>
+<div class="dept-title"><span>PROJECT SUPPORT</span><h3>공무·공사지원부</h3></div>
+<div class="teams"><span>예산견적팀</span><span>구매팀</span></div>
+</article>
+<article class="dept">
+<div class="dept-no">03</div>
+<div class="dept-title"><span>CONSTRUCTION</span><h3>공사관리부</h3></div>
+<div class="teams"><span>공사1팀</span><span>공사2팀</span></div>
+</article>
+</div>
+</section>
+
+<section class="org-principle">
+<p>ONE TEAM · PROFESSIONAL · RESPONSIBILITY</p>
+<h2>하나의 목표를 향해<br>각 분야의 전문성이 함께 움직입니다.</h2>
+</section>
+</main>
+
+<style>
+/* ORGANIZATION v15 — page scoped */
+.org-page{background:#fff;color:#172238}.org-page *{box-sizing:border-box}
+.org-hero{background:linear-gradient(115deg,#071b3b,#0b2d59 68%,#123c6f);color:#fff;padding:94px 6% 86px;position:relative;overflow:hidden}
+.org-hero:after{content:"";position:absolute;right:-110px;top:-170px;width:470px;height:470px;border:1px solid rgba(255,255,255,.09);transform:rotate(34deg)}
+.org-hero-inner{width:min(1500px,100%);margin:auto;position:relative;z-index:1}
+.org-kicker{margin:0 0 14px;font-size:13px;letter-spacing:.22em;font-weight:800;color:#f39a32}
+.org-hero h1{margin:0 0 16px;font-size:clamp(42px,5vw,66px);letter-spacing:-.045em}
+.org-hero-inner>p:last-child{margin:0;color:rgba(255,255,255,.7);font-size:16px}
+.org-breadcrumb{width:min(1500px,88%);margin:auto;padding:23px 0;color:#8993a1;font-size:13px;display:flex;gap:10px;border-bottom:1px solid #edf0f4}
+.org-breadcrumb a{color:#8993a1;text-decoration:none}.org-breadcrumb strong{color:#26344a}
+.org-intro{width:min(1500px,88%);margin:auto;padding:105px 0 82px;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end}
+.eyebrow{margin:0 0 19px;color:#ef8c23;font-size:12px;font-weight:800;letter-spacing:.2em}
+.org-intro h2{margin:0;color:#0a2345;font-size:clamp(36px,4vw,58px);line-height:1.18;letter-spacing:-.05em}
+.intro-copy{max-width:590px;margin:0;color:#697386;font-size:16px;line-height:1.9}
+.org-chart{width:min(1500px,88%);margin:auto;padding:18px 0 120px}
+.leadership{position:relative;min-height:250px;display:flex;justify-content:center;align-items:flex-start}
+.ceo{width:340px;background:#092a54;color:#fff;padding:36px 42px 39px;position:relative;box-shadow:0 18px 45px rgba(9,42,84,.13)}
+.role-en{display:block;color:#f39a32;font-size:11px;font-weight:800;letter-spacing:.2em;margin-bottom:12px}
+.ceo strong{font-size:29px;letter-spacing:-.04em}
+.ceo-line{position:absolute;left:50%;top:100%;height:104px;width:1px;background:#bfc8d4}
+.audit{position:absolute;left:calc(50% + 210px);top:28px;border-left:3px solid #ef8c23;padding:4px 0 4px 24px}
+.audit:before{content:"";position:absolute;right:100%;top:39px;width:210px;height:1px;background:#bfc8d4}
+.audit span{display:block;color:#ef8c23;font-size:10px;font-weight:800;letter-spacing:.18em;margin-bottom:6px}
+.audit strong{display:block;color:#132845;font-size:19px}.audit p{margin:5px 0 0;color:#7a8492;font-size:13px}
+.departments{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #bfc8d4;position:relative}
+.dept{position:relative;padding:58px clamp(22px,3vw,46px) 46px;border-right:1px solid #e0e5eb;min-height:320px}
+.dept:last-child{border-right:0}.dept:before{content:"";position:absolute;top:-8px;left:50%;width:15px;height:15px;border:2px solid #0b2c57;background:#fff;border-radius:50%;transform:translateX(-50%)}
+.dept-no{font-size:54px;font-weight:800;letter-spacing:-.06em;color:#e5eaf0;line-height:1;margin-bottom:28px}
+.dept-title span{display:block;color:#ef8c23;font-size:10px;font-weight:800;letter-spacing:.16em;margin-bottom:9px}
+.dept-title h3{margin:0 0 30px;color:#0a2345;font-size:27px;letter-spacing:-.045em}
+.teams{border-top:1px solid #e4e8ed;padding-top:21px;display:flex;gap:10px 20px;flex-wrap:wrap}
+.teams span{color:#596679;font-size:14px;font-weight:600}.teams span:not(:last-child):after{content:"·";margin-left:20px;color:#c0c7d0}
+.org-principle{background:#f5f7f9;padding:88px 6%;text-align:center}
+.org-principle p{margin:0 0 18px;color:#ef8c23;font-size:11px;font-weight:800;letter-spacing:.18em}
+.org-principle h2{margin:0;color:#0a2345;font-size:clamp(28px,3.2vw,45px);line-height:1.35;letter-spacing:-.045em}
+@media(max-width:800px){
+.org-hero{padding:68px 6% 62px}.org-hero-inner>p:last-child{font-size:14px;line-height:1.7}
+.org-breadcrumb{width:88%;overflow:hidden;white-space:nowrap}
+.org-intro{width:88%;padding:72px 0 62px;display:block}.org-intro h2{font-size:34px}.intro-copy{margin-top:24px;font-size:14px}
+.org-chart{width:88%;padding:0 0 78px}
+.leadership{display:block;min-height:0;padding-left:27px;margin-bottom:0;border-left:1px solid #d7dde5}
+.ceo{width:100%;padding:27px 29px 30px;box-shadow:none}.ceo strong{font-size:25px}.ceo-line{display:none}
+.audit{position:relative;left:auto;top:auto;margin:30px 0 48px;padding:2px 0 2px 22px}.audit:before{display:none}
+.departments{display:block;border-top:0;border-left:1px solid #d7dde5}
+.dept{min-height:0;border-right:0;border-bottom:1px solid #e1e6eb;padding:0 0 48px 27px;margin-bottom:46px}
+.dept:last-child{border-bottom:0;margin-bottom:0}.dept:before{left:-6px;top:7px;width:11px;height:11px;transform:none;background:#ef8c23;border-color:#ef8c23}
+.dept-no{font-size:38px;margin-bottom:15px;color:#dce2e9}.dept-title h3{font-size:24px;margin-bottom:22px}
+.teams{padding-top:17px}.teams span{font-size:14px}.org-principle{padding:65px 8%}.org-principle h2{font-size:29px}
+}
+</style>
 <footer><div><strong>SEWOONG ENGINEERING</strong>
 <p>(주)세웅이앤지 · 경기도 부천시 원미구 평천로696번길 21-2 (약대동 47-16) 2층</p>
 <p>TEL 032-672-1820 · FAX 032-672-1821 · E-mail <a href="mailto:sewoong1820@naver.com">sewoong1820@naver.com</a></p>
