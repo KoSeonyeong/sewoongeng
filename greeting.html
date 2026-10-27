@@ -29,6 +29,11 @@
 .greeting-office p{font-size:14px;line-height:1.9;color:#64748b;margin:0 0 23px;word-break:keep-all}
 .greeting-office a{font-weight:800;color:#0c315e;align-self:flex-start;border-bottom:1px solid #0c315e;padding-bottom:8px}
 @media(max-width:760px){.office-showcase{grid-template-columns:1fr;padding:65px 0 75px;gap:27px}.office-showcase .office-photo{aspect-ratio:1.12}.office-showcase .office-copy{padding:0 2px}.greeting-office{grid-template-columns:1fr;margin-bottom:65px}.greeting-office figure,.greeting-office img{min-height:0;height:auto;aspect-ratio:1.22;object-fit:cover}.greeting-office .office-detail{padding:30px 26px 35px}}
+
+/* CEO portrait v19 — scoped to greeting, no shared CSS changes */
+.greeting-v4 .ceo-signature{position:relative;margin-top:clamp(175px,19vw,225px)}
+.greeting-v4 .ceo-signature .ceo-portrait{position:absolute;right:0;bottom:calc(100% - 4px);width:clamp(160px,19vw,220px);height:auto;max-height:250px;object-fit:contain;object-position:bottom right;pointer-events:none;z-index:1}
+@media(max-width:760px){.greeting-v4 .ceo-signature{margin-top:195px}.greeting-v4 .ceo-signature .ceo-portrait{width:175px;max-height:205px}}
 </style></head><body>
 <header class="header">
   <a class="logo company-logo" href="index.html" aria-label="세웅이앤지 홈"><img src="sewoong-logo.png" alt="(주)세웅이앤지 로고"></a>
@@ -51,7 +56,7 @@
 <p>다양한 전기공사 분야에서 전문 기술인력과 시공 역량을 바탕으로 설계부터 시공, 유지 관리에 이르기까지 체계적인 현장관리를 수행하고 있으며, 철저한 안전 관리와 책임 있는 시공을 통해 고객 만족을 실현하기 위해 노력하고 있습니다.</p>
 <p>앞으로도 창의적인 사고와 앞선 기술을 바탕으로 고객의 신뢰에 보답하겠으며, 인간과 환경 그리고 소중한 에너지의 가치를 존중하는 기업으로 성장해 나가겠습니다.</p>
 <p class="thanks">감사합니다.</p>
-<div class="ceo-signature"><div><span>SEWOONG ENGINEERING</span><strong>(주) 세웅이앤지</strong></div><div class="ceo-name"><small>대표이사</small><b>박 은 미</b></div></div>
+<div class="ceo-signature"><img class="ceo-portrait" src="sewoong-ceo-kim-namyong.png" alt="김남용 대표이사 상반신 사진" width="220" height="245" loading="lazy"><div><span>SEWOONG ENGINEERING</span><strong>(주) 세웅이앤지</strong></div><div class="ceo-name"><small>대표이사</small><b>김 남 용</b></div></div>
 </article></div></section><section class="greeting-office" aria-label="세웅이앤지 회사 전경">
   <figure><img src="sewoong-office-exterior.webp" alt="세웅이앤지 간판이 보이는 부천 사무실 건물 외관" loading="lazy" width="1024" height="1365"></figure>
   <div class="office-detail"><span>OUR OFFICE</span><h3>신뢰가 시작되는 곳,<br>세웅이앤지</h3><p>경기도 부천시에 위치한 세웅이앤지의 회사 전경입니다. 고객과의 약속을 소중히 여기며, 책임 있는 시공으로 보답하겠습니다.</p><a href="location.html">오시는 길 안내 →</a></div>
