@@ -160,7 +160,15 @@
 .greeting-office p{font-size:14px;line-height:1.9;color:#64748b;margin:0 0 23px;word-break:keep-all}
 .greeting-office a{font-weight:800;color:#0c315e;align-self:flex-start;border-bottom:1px solid #0c315e;padding-bottom:8px}
 @media(max-width:760px){.office-showcase{grid-template-columns:1fr;padding:65px 0 75px;gap:27px}.office-showcase .office-photo{aspect-ratio:1.12}.office-showcase .office-copy{padding:0 2px}.greeting-office{grid-template-columns:1fr;margin-bottom:65px}.greeting-office figure,.greeting-office img{min-height:0;height:auto;aspect-ratio:1.22;object-fit:cover}.greeting-office .office-detail{padding:30px 26px 35px}}
-</style></head><body>
+</style>
+<style>
+/* HOME company profile: align content with centered site sections */
+.profile-banner{display:block}
+.profile-banner .profile-banner-inner{width:100%;max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:36px}
+.profile-banner .profile-banner-inner>.btn{flex-shrink:0}
+@media(max-width:800px){.profile-banner .profile-banner-inner{flex-direction:column;align-items:flex-start;gap:26px}}
+</style>
+</head><body>
 <header class="header">
   <a class="logo company-logo" href="index.html" aria-label="세웅이앤지 홈"><img src="sewoong-logo.png" alt="(주)세웅이앤지 로고"></a>
   <button class="menu-btn" aria-label="메뉴">☰</button>
@@ -205,7 +213,7 @@
   <figure class="office-photo"><img src="sewoong-office-exterior.webp" alt="경기도 부천시에 위치한 주식회사 세웅이앤지 회사 건물 전경" loading="lazy" width="1024" height="1365"><figcaption>SEWOONG ENG. · OFFICE EXTERIOR</figcaption></figure>
   <div class="office-copy"><span class="eyebrow">ABOUT SEWOONG</span><h2 id="office-title">기술에 신뢰를 더하는<br>전기공사 전문기업</h2><p>주식회사 세웅이앤지는 안전과 책임을 바탕으로 고객과 함께 성장합니다. 실제 회사의 모습과 함께, 현장을 향한 우리의 약속을 만나보세요.</p><a class="office-link" href="greeting.html">회사소개 바로가기 <span aria-hidden="true">→</span></a></div>
 </section>
-<section class="profile-banner"><div><span class="eyebrow light">COMPANY PROFILE</span><h2>세웅이앤지를<br>더 자세히 만나보세요.</h2><p>회사소개부터 주요 실적과 보유 면허까지 지명원에서 확인하실 수 있습니다.</p></div><a class="btn white" href="brochure.html">지명원 보기 →</a></section>
+<section class="profile-banner"><div class="profile-banner-inner"><div><span class="eyebrow light">COMPANY PROFILE</span><h2>세웅이앤지를<br>더 자세히 만나보세요.</h2><p>회사소개부터 주요 실적과 보유 면허까지 지명원에서 확인하실 수 있습니다.</p></div><a class="btn white" href="brochure.html">지명원 보기 →</a></div></section>
 <section class="contact-cta"><div><span class="eyebrow">CONTACT</span><h2>신뢰할 수 있는 파트너를<br>찾고 계신가요?</h2></div><div><p>프로젝트 및 공사 관련 문의를 남겨주세요.<br>확인 후 안내드리겠습니다.</p><a class="btn primary" href="contact.html">문의하기 →</a></div></section>
 </main>
 
